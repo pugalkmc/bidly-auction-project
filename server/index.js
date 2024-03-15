@@ -10,7 +10,7 @@ const app = express();
 const router = express.Router();
 app.use(express.json());
 app.use(cors({
-    origin:['https://bidly-auction-project-delta.vercel.app']
+    origin:"*"
 }));
 
 app.use((req, res, next) => {
