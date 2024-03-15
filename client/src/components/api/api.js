@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // Configure Axios instance
 const API = axios.create({
-  baseURL: 'http://localhost:3001', // Set your API base URL here
+  baseURL: 'https://bidly-auction-project-5yka.vercel.app', // Set your API base URL here
   // You can add more default settings here
 });
 
