@@ -9,9 +9,15 @@ const app = express();
 
 const router = express.Router();
 app.use(express.json());
+const allowedOrigins = ['https://bidly-auction-project-delta.vercel.app'];
 app.use(cors({
-    allowedHeaders: '*',
-    origin:"*"
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  }
 }));
 
 app.use((req, res, next) => {
