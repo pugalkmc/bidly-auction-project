@@ -1,0 +1,20 @@
+
+.page-not-found {
+    text-align: center;
+    align-items: center;
+    height: 300px;
+}
+
+.page-not-found h3{
+    color: rgb(2, 152, 2);
+    font-size: xx-large;
+}
+
+.page-not-found a {
+    display: block;
+    transition: all 0.3s;
+}
+
+.page-not-found a:hover {
+    text-decoration: wavy;
+}
